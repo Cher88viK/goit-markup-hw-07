@@ -49,18 +49,8 @@ img {
 address {
   font-style: normal;
 }
-body {
-  color: var(--primary-text-color);
-  font-family: Roboto, sans-serif;
-  letter-spacing: 0.03em;
-}
 
-.container {
-  padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -70,6 +60,11 @@ ul {
   padding: 0;
   margin: 0;
 }
+ body {
+   color: var(--primary-text-color);
+   font-family: Roboto, sans-serif;
+   letter-spacing: 0.03em;
+ }
 /* Шапка сторінки */
 .header {
   border-bottom: 1px solid var(--border-header-color);
@@ -93,7 +88,7 @@ ul {
   color: var(--title-text-color);
   margin-right: 93px;
 }
-.logo-footer {
+.logo--footer {
   display: inline-block;
   margin-bottom: 20px;
   color: var(--hero-title-color);
@@ -102,7 +97,7 @@ ul {
   font-size: 26px;
   line-height: 1.2;
 }
-.logo__part {
+.logo--part {
   color: var(--accent-color);
 }
 
@@ -234,10 +229,10 @@ ul {
 
 /* Переваги */
 
-.benefits-section {
+.benefits {
   padding-top: 94px;
 }
-.benefits-section__container {
+.benefits__container {
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
@@ -255,13 +250,13 @@ ul {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
 }
-.features-list {
+.benefits__list {
   display: flex;
   gap: 30px;
   padding-bottom: 0px;
   list-style-type: none;
 }
-.features-list__container {
+.benefits__icons-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -271,11 +266,11 @@ ul {
   width: 270px;
   height: 120px;
 }
-.features-list__icon {
+.benefits__icon {
   display: flex;
   justify-content: center;
 }
-.features-list__title {
+.benefits__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -283,13 +278,12 @@ ul {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-
-.features-list__text {
-  color: var(--primary-text-color);
-  letter-spacing: 0.03em;
-  font-size: 14px;
-  line-height: 1.71;
-  margin-bottom: 0;
+.benefits__text{
+      color: var(--primary-text-color);
+        letter-spacing: 0.03em;
+        font-size: 14px;
+        line-height: 1.71;
+        margin-bottom: 0;
 }
 
 /*Чим ми займаємося*/
@@ -521,7 +515,7 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address__link--white {
+.address__link--accent {
   display: inline-block;
 
   color: var(--hero-title-color);
@@ -682,8 +676,7 @@ ul {
 }
 .modal {
   transform: translate(-50%, -50%) scale(1.1);
-}
-.modal {
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -691,7 +684,6 @@ ul {
 
   min-width: 528px;
   min-height: 521px;
-  padding: 40px;
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -726,6 +718,8 @@ ul {
 }
 
 /* Форма */
+.form {
+  padding: 40px;}
 
 .form__title {
   margin-bottom: 12px;
@@ -753,8 +747,7 @@ ul {
   letter-spacing: 0.01em;
 }
 
-.form__input,
-.form__textarea {
+.form__input{
   width: 100%;
   border: rgba(33, 33, 33, 0.2) solid 1px;
   border-radius: 4px;
@@ -762,18 +755,22 @@ ul {
   padding: 11px;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form__input {
   margin-bottom: 10px;
   padding-left: 40px;
 }
 
 .form__textarea {
-  display: block;
+width: 100%;
   height: 120px;
-  resize: none;
+  padding: 12px 16px;
   margin-bottom: 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  resize: none;
   padding: 15px;
 }
 
