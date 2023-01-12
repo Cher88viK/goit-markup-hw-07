@@ -1,27 +1,28 @@
 /* Герой */
 
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
-    background-color: var(--hero-background-color);
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    height: 600px;
-    max-width: 1600px;
+  background-color: var(--hero-background-color);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+  max-width: 1600px;
 
-    background-color: var(--hero-background-color);
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url("../images/bcg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-color: var(--hero-background-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/bcg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-
-&__title {
+  &__title {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -34,5 +35,5 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-}
+  }
 }

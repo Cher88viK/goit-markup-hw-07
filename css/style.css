@@ -719,7 +719,8 @@ ul {
 
 /* Форма */
 .form {
-  padding: 40px;}
+  padding: 40px;
+}
 
 .form__title {
   margin-bottom: 12px;
@@ -874,16 +875,6 @@ width: 100%;
 }
 
 /* Сторінка Портфоліо*/
-.portfolio-section {
-  padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-}
-.portfolio-section__container {
-  padding-top: 94px;
-}
-
 .projects__thumb {
   position: relative;
   overflow: hidden;
@@ -916,13 +907,13 @@ width: 100%;
 }
 
 /*Наші проекти*/
-.projects-section {
+.projects {
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
 }
-.projects-section__container {
+.projects__container {
   padding-bottom: 94px;
 }
 .projects__list {

@@ -1,9 +1,8 @@
 .icons {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 
-
-&__list {
+  &__list {
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -12,15 +11,15 @@
     transition-property: fill, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-&__list:hover,
-&__list:focus {
+  &__list:hover,
+  &__list:focus {
     background-color: var(--accent-color);
     fill: var(--hero-title-color);
-}
+  }
 
-&__link {
+  &__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,12 +30,12 @@
     transition-property: fill, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-&__link:hover,
-&__link:focus {
+  &__link:hover,
+  &__link:focus {
     outline-style: none;
     background-color: var(--accent-color);
     fill: var(--hero-title-color);
-}
+  }
 }

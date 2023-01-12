@@ -1,10 +1,9 @@
 .footer-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: var(--hero-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--hero-background-color);
 
-
-&__container {
+  &__container {
     display: flex;
     align-items: baseline;
     gap: 70px;
@@ -12,5 +11,5 @@
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
-}
+  }
 }
